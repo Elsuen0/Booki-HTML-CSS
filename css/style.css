@@ -13,9 +13,26 @@
     color: var(--main-color);
 }
 
+
+body {
+    width: 1440px;
+    margin: auto;
+}
+
+/******** EN-TÊTE *******/
+
 header{
     display: flex;
     justify-content: space-between;
+    height: 79px;
+}
+
+.Logo img {
+    width: 61.09px;
+    height: 19px;
+    position: relative;
+    top: 30px;
+    left: 30px;
 }
 
 .navbar {
