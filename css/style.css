@@ -105,6 +105,7 @@ header{
     border: 1px solid #F2F2F2;
     border-radius: 15px;
     margin-top: 35px;
+    height: 49px;
 }
 
 .search::placeholder {
@@ -117,7 +118,7 @@ header{
     text-align: center;
 }
 
-.submit {
+.submit, .submit_smartphone {
     color: rgb(255, 255, 255);
     background-color: #0065FC;
     border: none;
@@ -132,9 +133,13 @@ header{
     text-align: center;
 }
 
+.submit_smartphone {
+    display: none;
+}
+
 .icone {
-    height: 50px;
-    width: 50px;
+    height: 49px;
+    width: 49px;
     background-color: #F2F2F2;
     border-radius: 10px 0px 0px 10px;
 }
@@ -151,15 +156,22 @@ a {
     text-decoration: none;
     color: black;
 }
-.filterbar {
+.filterbar, .Filtres {
     display: flex;
     justify-content: space-between;
     width: 758px;
-    height: 50px;
+    height: 100%;
     margin-top: 35px;
 }
 
-.filterbar h1 {
+.Filtre_title {
+    display: flex;
+    position: relative;
+    top: 35px;
+    margin-right: 30px;
+}
+
+.filterbar h2 {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -170,6 +182,7 @@ a {
 
 .économique, .familial, .romantique, .pépites {
     display: flex;
+    align-items: center;
     border: 2px solid #D9D9D9;
     padding-left: 19px;
     padding-right: 19px;
@@ -182,8 +195,6 @@ a {
 }
 
 .filterbar i {
-    position: relative;
-    top: 14px;
     padding-right: 10px;
 }
 
@@ -342,7 +353,7 @@ a {
     font-weight: 700;
 }
 
-#neutralStar {
+.neutral-star {
     color: var(--main-bg-color)
 }
 
@@ -397,7 +408,6 @@ a {
     display: flex;
     justify-content: space-around;
     height: 100%;
-    margin: 15px;
 }
 
 .titre-activités {
@@ -406,19 +416,19 @@ a {
     margin-top: 65px;
 }
 
-#réglage_carte_activités {
+.réglage_carte_activités {
     width: 297.5px;
     padding: 0px;
     /*border: 2px solid red;*/
 }
 
-#réglage_carte_activités img {
+.réglage_carte_activités img {
     height: 380px;
     width: 100%;
     border-radius: 20px 20px 0px 0px;
 }
 
-#réglage_carte_activités h4 {
+.réglage_carte_activités h4 {
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 15px;
@@ -440,7 +450,6 @@ a {
 footer {
     display: flex;
     justify-content: space-between;
-    width: 100%;
     height: 163px;
     font-size: 18px;
     background-color: #F2F2F2;
@@ -481,6 +490,26 @@ footer article {
     body {
         width: 1024px;
     }
+
+    .Filtre_title {
+        display: flex;
+        position: relative;
+        margin-right: 0px;
+        top: -20px;
+    }
+
+    .Filtres {
+        margin-left: -50px;
+    }
+
+    .filterbar {
+        width: 668px;
+    }
+
+    .infobar {
+        margin-top: 37.5px;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -512,13 +541,13 @@ footer article {
         font-size: 13px;
     }
 
-    #réglage_carte_activités {
+    .réglage_carte_activités {
         width: 193.5px;
         height: 270px;
         padding: 0px;
         /*border: 2px solid red;*/
     }
-    #réglage_carte_activités img {
+    .réglage_carte_activités img {
         height: 200px;
     }
 
@@ -557,6 +586,8 @@ footer article {
         align-items: center;
     }
 
+/****** BARRE DE NAVIGATION ******/
+
     .navbar {
         width: 100%;
         
@@ -584,6 +615,8 @@ footer article {
         margin-top: 0px;
     }
 
+/****** HEADLINE ******/
+
     .headline {
         margin-left: 20px;
         margin-right: 20px;
@@ -592,4 +625,196 @@ footer article {
     .headline h1 {
         margin-top: 30px;
     }
+
+/****** BOUTON DE RECHERCHE ******/
+
+    .boutons {
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 335px;
+        height: 49px;
+        /*border: 2px solid red;*/
+    }
+
+    .icone {
+        /*border: 20px solid blue;*/
+        height: 49px;
+        background-color: #F2F2F2;
+    }
+
+    .search {
+        /*border: 2px solid green;*/
+        padding: 0px;
+        width: 70%;
+    }
+
+    .submit {
+        border: 2px solid orange;
+        
+    }
+
+    .fa-solid.fa-magnifying-glass::before {
+        /*border: 2px solid red;*/
+        display: flex;
+        justify-content: center;
+        color: white;
+    }
+
+    .submit {
+        display: none;
+    }
+
+    .submit_smartphone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        height: 49px;
+        width: 49px;
+    }
+
+/****** FILTRES ******/
+
+.filterbar {
+    width: 335px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.Filtres {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+.Filtres h2 {
+    font-size: 14px;
+}
+
+/****** POPULAIRES ******/
+
+.romantique, .pépites, .économique, .familial {
+    width: 120px;
+}
+
+.romantique, .pépites  {
+    margin-top: 15px;
+}
+
+.familial, .pépites {
+    margin-left: 0px;
+}
+
+.infobar {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.fa-solid.fa-info {
+    margin-left: 6px;
+}
+
+.icone_info{
+    width: 27.33px;
+    max-height: 20px;
+    align-items: center;
+}
+
+.fa-info:before {
+    position: relative;
+    bottom: 4px;
+    left: 2px;
+    font-size: 10px;
+}
+
+
+.hebergements-and-populaires {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.populaires-cards .card {
+    width: 325px;
+}
+.hebergements-and-populaires section {
+    padding: 20px;
+    margin-top: 0px;
+    border-radius: 0px;
+}
+
+.populaires {
+    width: 100%;
+    
+}
+
+.populaires-cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.card {
+    width: 50px;
+    display: flex;
+}
+
+/****** HEBERGEMENTS ******/
+
+.hebergements-and-populaires .hebergements {
+    background-color: transparent;
+}
+
+.cartes-hébergements {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards {
+    width: 325px;
+}
+
+.hebergement-afficher {
+    margin-top: 15px;
+}
+
+/****** ACTIVITÉS ******/
+
+.section-activités {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+}
+
+.titre-activités {
+    margin-top: 0px;
+}
+
+.cartes-activités {
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 2px;
+    justify-content: center;
+}
+
+.réglage_carte_activités {
+    width: auto;
+    margin-bottom: 15px;
+    height: auto;
+}
+.réglage_carte_activités img{
+    height: 141px;
+    width: 315px;
+}
+
+/****** FOOTER ******/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
 }
