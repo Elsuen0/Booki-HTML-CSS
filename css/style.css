@@ -88,12 +88,12 @@ header{
 
 /****** BARRE DE RECHERCHE ******/
 
-.search_bar {
+.recherche_bar {
     width: 377px;
     height: 49px;
 }
 
-.search {
+.recherche {
     border: none;
     padding-left: 24px;
     padding-right: 24px;
@@ -110,7 +110,7 @@ header{
     height: 49px;
 }
 
-.search::placeholder {
+.recherche::placeholder {
     color: rgb(0, 0, 0);
     font-style: normal;
     font-weight: 700;
@@ -157,7 +157,7 @@ a {
     text-decoration: none;
     color: black;
 }
-.filterbar, .Filtres {
+.filtrebar, .Filtres {
     display: flex;
     justify-content: space-between;
     width: 758px;
@@ -172,7 +172,7 @@ a {
     margin-right: 30px;
 }
 
-.filterbar h2 {
+.filtrebar h2 {
     font-style: normal;
     font-weight: 700;
     font-size: 17px;
@@ -194,7 +194,7 @@ a {
     background-color: #DEEBFF;
 }
 
-.filterbar i {
+.filtrebar i {
     padding-right: 10px;
 }
 
@@ -497,7 +497,7 @@ footer article {
         margin-left: -50px;
     }
 
-    .filterbar {
+    .filtrebar {
         width: 668px;
     }
 
@@ -637,7 +637,7 @@ footer article {
         background-color: #F2F2F2;
     }
 
-    .search {
+    .recherche {
         /*border: 2px solid green;*/
         padding: 0px;
         width: 70%;
@@ -670,7 +670,7 @@ footer article {
 
 /****** FILTRES ******/
 
-.filterbar {
+.filtrebar {
     width: 335px;
     margin-right: 20px;
     margin-left: 20px;
