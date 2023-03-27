@@ -73,7 +73,6 @@ header{
 /******** HEADLINE ********/
 
 .headline h1 {
-    font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
@@ -81,7 +80,6 @@ header{
 }
 
 .headline p {
-    font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -114,7 +112,6 @@ header{
 
 .search::placeholder {
     color: rgb(0, 0, 0);
-    font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -129,7 +126,7 @@ header{
     border-radius: 0px 15px 15px 0px;
     height: 50px;
     width: 132px;
-    font-family: 'Raleway';
+
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -168,7 +165,7 @@ a {
     margin-top: 35px;
 }
 
-.Filtre_title {
+.Filtre_titre {
     display: flex;
     position: relative;
     top: 35px;
@@ -176,7 +173,6 @@ a {
 }
 
 .filterbar h2 {
-    font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 17px;
@@ -214,7 +210,6 @@ a {
 .infobar p {
     margin: auto;
     margin-left: 10px;
-    font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -235,7 +230,7 @@ a {
     margin-left: 9px;
 }
 
-.section-title {
+.section-titre {
     margin: 0;
     font-size: 22px;
 }
@@ -267,7 +262,7 @@ a {
     /*border: 2px solid red;*/
 }
 
-.hebergement-title {
+.hebergement-titre {
     display: flex;
     justify-content: space-between ;
     align-items: center;
@@ -279,7 +274,6 @@ a {
 }
 
 .hebergement-afficher h3 {
-    font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -305,42 +299,42 @@ a {
     margin: 5px 0px 5px 0px;
 }
 
-.card, .cards {
+.carte, .cartes {
     background-color: white;
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
-.cards {
+.cartes {
     width: 30%;
     height: 207.25px;
     /*border: 2px solid blue;*/
     margin-top: 30px;
 }
 
-.card_hebergements {
+.carte_hebergements {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.card img, .cards img {
+.carte img, .cartes img {
     object-fit: cover;
 }
 
-.cards img {
+.cartes img {
     height: 124px;
     width: 100%;
     border-radius: 20px 20px 0px 0px;
 }
 
-.cards h4 {
+.cartes h4 {
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
-.cards a {
+.cartes a {
     display: block;
     /*border: 2px solid blue;*/
 }
@@ -349,7 +343,7 @@ a {
     margin-bottom: 10px;
 }
 
-.card-title {
+.carte-titre {
     font-size: 16px;
 }
 
@@ -366,25 +360,25 @@ a {
     width: 32%;
 }
 
-.populaires-title {
+.populaires-titre {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.populaires-cards .card {
+.populaires-cartes .carte {
     display: flex;
     margin-top: 33px;
 }
 
-.populaires-cards img {
+.populaires-cartes img {
     width: 33%;
     height: 134px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
 
-.populaires-cards .card-content {
+.populaires-cartes .carte-content {
     width: 67%;
     padding-left: 15px;
     display: flex;
@@ -393,16 +387,16 @@ a {
     box-sizing: border-box;
 }
 
-.populaires-cards .card-title {
+.populaires-cartes .carte-titre {
     margin-top: 10px;
     margin-bottom: 4px;
 }
 
-.populaires-cards .card-subtitle {
+.populaires-cartes .carte-soustitre {
     margin: 0;
 }
 
-.populaires-cards .card-rating {
+.populaires-cartes .carte-rating {
     margin-bottom: 5px;
 }
 
@@ -436,7 +430,6 @@ a {
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 15px;
-    font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -465,7 +458,6 @@ footer {
 }
 
 footer h1 {
-    font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -474,7 +466,6 @@ footer h1 {
 }
 
 footer p {
-    font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -495,7 +486,7 @@ footer article {
         width: 1024px;
     }
 
-    .Filtre_title {
+    .Filtre_titre {
         display: flex;
         position: relative;
         margin-right: 0px;
@@ -527,21 +518,21 @@ footer article {
         margin-top: 50px;
     }
 
-    .populaires-cards {
+    .populaires-cartes {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .populaires-cards .card {
+    .populaires-cartes .carte {
         width: 30%;
     }
 
-    .populaires-cards .card-title {
+    .populaires-cartes .carte-titre {
         font-size: 14px;
     }
 
-    .populaires-cards .card-subtitle {
+    .populaires-cartes .carte-soustitre {
         font-size: 13px;
     }
 
@@ -738,7 +729,7 @@ footer article {
     flex-direction: column-reverse;
 }
 
-.populaires-cards .card {
+.populaires-cartes .carte {
     width: 325px;
 }
 .hebergements-and-populaires section {
@@ -752,13 +743,13 @@ footer article {
     
 }
 
-.populaires-cards {
+.populaires-cartes {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.card {
+.carte {
     width: 50px;
     display: flex;
 }
@@ -774,7 +765,7 @@ footer article {
     flex-direction: column;
 }
 
-.cards {
+.cartes {
     width: 325px;
 }
 
